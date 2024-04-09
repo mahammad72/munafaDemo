@@ -123,6 +123,7 @@ const HomeScreen = ({navigation}) => {
         currency: 'INR',
         name: 'Munafa App',
         description: 'UPI Payment',
+        "order_id": "order_NuufUTl1KGNN95",   
         prefill: {
           email: 'user@example.com',
           contact: '9662552437',
@@ -319,7 +320,7 @@ const HomeScreen = ({navigation}) => {
             />
           </View>
         </View>
-
+        
         <View style={{padding: 10}}>
           <Text style={styles.txtTitleContainer}>Payment Panding</Text>
           <View style={{marginTop: 10}}>
@@ -331,11 +332,8 @@ const HomeScreen = ({navigation}) => {
           </View>
         </View>
       </ScrollView>
-
     </View>
   );
 };
-
-
 
 export default HomeScreen;
