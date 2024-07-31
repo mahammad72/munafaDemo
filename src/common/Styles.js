@@ -129,4 +129,7 @@ export const styles = StyleSheet.create({
     borderRadius:5,
     padding:10
     },
+    font12:{color: colors.white, fontSize: 12},
+    font17:{color: colors.white, fontSize: 17},
+    containerTyle:{flex: 1, flexDirection: 'row', paddingHorizontal: 10},
   });

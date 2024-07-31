@@ -16,6 +16,7 @@ import Feather from 'react-native-vector-icons/Feather';
 import { styles } from '../common/Styles';
 import RazorpayCheckout from 'react-native-razorpay';
 import { ROZAR_TEST_KEY } from '../common/Constant';
+import Cards from '../components/Cards';
 
 const data = [
   {
@@ -221,51 +222,7 @@ const HomeScreen = ({navigation}) => {
       </View>
       <ScrollView style={{flex: 1}}>
         {/** Credit card */}
-        <LinearGradient
-          start={{x: 0, y: 0}}
-          end={{x: 1, y: 0}}
-          colors={['#6e9774', '#d2ae24', '#d2ae24']}
-          style={styles.creditCardContainer}>
-          <View style={{flex: 1, flexDirection: 'row', paddingHorizontal: 10}}>
-            <View style={{flex: 1}}>
-              <Text style={styles.txtCardStyle}>Debit Card</Text>
-              <Image
-                style={styles.imgConWitMargin}
-                source={require('../assets/images/chips.png')}
-                resizeMode="contain"
-              />
-            </View>
-            <View style={{flex: 2}}>
-              <View style={{flexDirection: 'row', justifyContent: 'flex-end'}}>
-                <Image
-                  style={styles.creditImgCon}
-                  source={require('../assets/images/visa.png')}
-                  resizeMode="contain"
-                />
-              </View>
-
-              <View style={styles.txtContainerWithMargin}>
-                <Text style={styles.txtStyle}>**** **** **** 1234</Text>
-              </View>
-            </View>
-          </View>
-          <View style={styles.lastContainer}>
-            <View>
-              <Text style={{color: colors.white, fontSize: 12}}>
-                Card Holder name
-              </Text>
-              <Text style={{color: colors.white, fontSize: 17}}>
-                Momin Mohammad
-              </Text>
-            </View>
-            <View>
-              <Text style={{color: colors.white, fontSize: 12}}>
-                Valid Date
-              </Text>
-              <Text style={{color: colors.white, fontSize: 17}}>09/35</Text>
-            </View>
-          </View>
-        </LinearGradient>
+        <Cards />
         {/** payment  methods */}
         <View style={styles.transacionContainer}>
           <View style={styles.commonBtnContainer}>
